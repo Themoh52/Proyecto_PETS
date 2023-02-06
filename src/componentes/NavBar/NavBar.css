@@ -1,0 +1,8 @@
+Navbar{
+display:grid;
+grid-template-columns: auto(3, 1fr);
+}
+.Cartwidget{
+    height: 40px;
+    width: 40px; 
+}
