@@ -28,7 +28,7 @@ const CartContainer = () =>{
 
 //to add orders, and submit those orders to the db.//
         addDoc(queryOrder, order)
-        .then(resp => console.log(resp))
+        .then(resp => alert("Listo, orden confirmada. Tu pedido tiene la id: "+ resp.id +".Te llegará un correo con los detalles de la compra y los medios de pago"))
         .catch(err => console.log(err))
         .finally(
             deleteCart(),
@@ -37,8 +37,7 @@ const CartContainer = () =>{
                 phone:"",
                 email:"" 
             })
-        )
-        alert("Listo, orden confirmada. Tu pedido tiene la id"&order.id&"Te llegará un correo con los detalles de la compra y los medios de pago")
+        ) 
     }
 
 //It controls each variation of the entered data.//
